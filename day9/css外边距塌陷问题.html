@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .father{
+        width: 300px;
+        height: 300px;
+        background-color: skyblue;
+        /* 解决方法二:推荐使用 */
+        /* overflow: hidden; */
+    }
+    .son{
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+        /* 给子类标签设置外边距会导致父级标签也跟着下沉 */
+        margin-top: 50px;
+        /* 解决方法一 */
+        display: inline-block;
+    }
+</style>
+<body>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+    
+</body>
+</html>

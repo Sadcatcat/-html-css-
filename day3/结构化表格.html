@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>结构化</title>
+</head>
+<body>
+    <!-- 表格和浏览器结构一样，也有thead tbody tfoot   不允许跨表结构合并！ -->
+    <table border="3">
+        <thead>
+            <tr>
+                <td>姓名</td>
+                <td>年龄</td>
+                <td>性别</td>
+            </tr>
+        </thead>
+        <!-- rowspan 跨行合并 -->
+        <tbody>
+            <tr>
+                <td>小红</td>
+                <td rowspan="2">18</td>
+                <td>女</td>
+            </tr>
+            
+            <tr>
+                <td>小明</td>
+                <td>男</td>
+            </tr>
+        </tbody>
+        <!-- colspan 跨列合并 -->
+        <tfoot> 
+            <tr>
+                <td>总结</td>
+                <td colspan="2">郎才女貌</td>
+            </tr>
+        </tfoot>
+       
+    </table>
+</body>
+</html>

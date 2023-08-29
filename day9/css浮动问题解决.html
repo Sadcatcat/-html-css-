@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        width: 100px;
+        height: 100px;
+        /* 转换成行内块后，虽然在一行，但是中间会有小间隙 */
+        display: inline-block;
+    }
+    .one{
+        background-color: pink;
+        /* 用浮动解决上述问题 */
+        float: left;
+    }
+    .two{
+        background-color: skyblue;
+        float: left;
+    }
+
+    img{
+        float: right;
+    }
+
+</style>
+<body>
+    <div class="one">1</div>
+    <div class="two">2</div>
+    <img src="../day7/img/向左 (1).png" alt="">
+    霓虹灯 霓虹灯 霓虹灯 霓虹灯 霓虹灯 霓虹灯 霓虹灯 霓虹灯 霓虹灯 霓虹灯 霓虹灯 霓虹灯 霓虹灯 霓虹灯 霓虹灯
+</body>
+</html>

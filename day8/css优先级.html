@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body
+    {
+        color:red;
+    }
+    /* 使用!important语句可以强行提高优先级（不包括继承），使用较少 */
+    div{
+        color: green !important;
+    }
+    .pox{
+        color: aqua;
+    }
+    #pos{
+        color: blue;
+    }
+</style>
+<body>
+    <div class="pox" id="pos" style="color: blueviolet;">这是div</div>
+</body>
+</html>

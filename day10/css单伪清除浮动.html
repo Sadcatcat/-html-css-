@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .top{
+        width: 1000px;
+        /* 当父级标签的高度为0 且子类标签有浮动时，父级标签之外的标签会顶上去 */
+        /* background-color: pink; */
+    }
+
+    .left{
+        float: left;
+        height: 300px;
+        width: 200px;
+        background-color: blanchedalmond;
+    }
+
+    .right{
+        float: right;
+        height: 300px;
+        width: 600px;
+        background-color: skyblue;
+    }
+
+    .bottom{
+        width: 1000px;
+        height: 200px;
+        background-color: green;
+    }
+
+    /* 解决方法：单伪元素 clear:both */
+    .clearfix::after{
+        content: '';
+        /* 必须要加入content不然伪元素不生效，且要块级标签才能清除浮动 */
+        display: block;
+        clear: both;
+        /* 补充写法 ：有些浏览器因为兼容性原因，会显示伪元素高度*/
+        height: 0;
+        visibility: hidden;
+    }
+
+</style>
+
+<body>
+    <div class="top clearfix">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+    <div class="bottom"></div>
+</body>
+</html>

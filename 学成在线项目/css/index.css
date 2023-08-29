@@ -1,0 +1,531 @@
+*{
+    padding:0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f5f7;
+  }
+
+
+/* topbox */
+.topbox{
+    width: 1919px;
+    height: 100px;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.topbox_img{
+    float: left;
+    padding-left: 360px;
+    padding-top: 30px;
+}
+
+
+/* 导航 */
+.topbox ul{
+    float: left;
+}
+
+
+.topbox ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+.topbox ul li:nth-child(1){
+    margin-left: 80px;
+}
+
+.topbox ul li:nth-child(2){
+    margin:0 21px;
+}
+
+.topbox ul li:nth-child(3){
+    margin-right: 80px;
+}
+
+.topbox ul li a{
+    width: 54px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 18px;
+    padding: 0 10px;
+    color: #050505;
+    text-decoration: none;
+}
+
+.topbox ul li a:hover{
+    border-bottom: 2px solid #04a4ff;
+}
+/* 导航 */
+
+/* 搜索框 */
+
+.topbox_find {
+    float: left;
+    overflow: hidden;
+    margin: 30px 0;
+}
+
+.topbox_find input:nth-child(1){
+   width: 360px;
+   height: 40px;
+   border: 1px solid #00a4ff;
+   font-size: 14px;
+   padding-left: 21px;
+   
+}
+
+.topbox_find input:nth-child(2){
+    height: 42px;
+    width: 50px;
+    background-color: #00a4ff;
+    border: 1px solid #00a4ff;
+    margin-left: -6px;
+    margin-right: 30px;
+    background-image: url(../image/search.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.topbox_find input:nth-child(2):hover{
+    background-color: aqua;
+}
+/* 防止在输入框中输入数据后，搜索框下移 */
+.topbox_find input:nth-child(1),
+.topbox_find input:nth-child(2) {
+    vertical-align: middle;
+}
+/* 搜索框 */
+
+/* 用户头像和名称*/
+.topbox_head{
+    float: left;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    overflow: hidden;
+}
+
+.topbox_head p{
+ display: inline-block;
+ font-size: 14px;
+ color:#666666;
+ font-family: Arial;
+}
+
+.topbox_head p,
+.topbox_head img{
+    vertical-align: middle;
+}
+/* 用户头像和名称*/
+
+/* bodybox */
+.bodybox{
+    
+    width: 1919px;
+    width: 420px;
+}
+
+.bodybox img{
+    float:left;
+}
+
+.bodybox img:nth-child(2)
+{
+    margin-left: 360px;
+    margin-top:-420px;
+}
+
+.bodybox img:nth-child(3)
+{
+   width: 190px;
+   height: 420px;
+   margin-left: 360px;
+   margin-top:-420px;
+}
+
+.bodybox img:nth-child(4)
+{
+   width: 228px;
+   height: 300px;
+   margin-left: 1332px;
+   margin-top:-370px;
+}
+
+.bodybox .class_index {
+    float: left;
+    list-style: none;
+    margin-top: -420px;
+    margin-left: 380px;
+    padding-top: 15px;
+    width: 190px;
+    height: 420px;
+}
+
+.bodybox .class_index li{
+    width: 143px;
+}
+
+.bodybox .class_index li a{
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 44px;
+    color: #ffffff;
+}
+
+.bodybox .class_index li a::after{
+    float: right;
+    content: '>';
+}
+
+.bodybox .class_index li a:hover{
+    color: #00a4ff;
+}
+
+.bodybox .my_class{
+  float: left;
+  width: 228px;
+  height: 300px;
+  margin-top: -385px;
+  margin-left: 1332px;
+}
+
+.bodybox .my_class ul{
+    list-style: none;
+   
+}
+
+.bodybox .my_class ul li{
+    text-decoration: none;
+}
+
+.bodybox .my_class ul li:nth-child(1){
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-top: 12px;
+    margin-left: 66px;
+}
+
+.bodybox .my_class ul li:nth-child(2)
+{
+    margin-top: 19px;
+}
+
+.bodybox .my_class ul li:nth-child(-n+4):nth-child(n+2)
+{   
+    line-height: 60px;  
+    margin-left: 19px;
+    margin-right: 19px;
+ 
+}
+
+.bodybox .my_class ul li:nth-child(5)
+{
+    margin-top: -180px;
+}
+
+.bodybox .my_class ul li:nth-child(-n+7):nth-child(n+5)
+{
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 90px;
+    line-height: 60px;
+}
+
+.bodybox .my_class ul li:nth-child(8)
+{
+    margin-top: -155px;
+    
+}
+
+.bodybox .my_class ul li:nth-child(-n+10):nth-child(n+8)
+{
+    font-size: 12px;
+    font-weight: 500;
+    margin-left: 19px;
+    margin-right: 19px;
+    border-bottom: 1px solid #a5a5a5;
+    margin-bottom: 15px;
+    line-height: 45px;
+    color: #a5a5a5;
+ 
+}
+
+
+.bodybox .my_class ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: #4e4e4e;
+
+}
+
+.bodybox .my_class ul li a:hover
+{
+    color: skyblue;
+}
+
+.bodybox .my_class button{
+    height: 41px;
+    width: 200px;
+    margin-left: 14px;
+    margin-right: 14px;
+    margin-top: -10px;
+    background-color: white;
+    border: 2px solid #00a4ff;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #00a4ff;
+    font-weight: 600;
+}
+
+.bodybox .my_class button:hover
+{
+    background-color: skyblue;
+}
+
+.index_class{
+    float: left;
+    width: 1200px;
+    height: 60px;
+    background-color: #ffffff;
+    margin-left: 360px;
+    margin-right: 359px;
+    box-shadow: 0px 2px 3px 0px 
+            rgba(118, 118, 118, 0.2)
+}
+
+.index_class ul{
+    list-style: none;
+}
+
+.index_class ul li
+{
+    float: left;
+    margin-top: 20px;
+ 
+}
+
+.index_class ul li:nth-child(1)
+{
+    font-size: 16px;
+    margin-left: 34px;
+    color: #00a4ff;
+    font-weight: 600;
+}
+
+.index_class ul li:nth-child(-n+6){
+    margin-right: 34px;
+    border-right: 2px solid #a5a5a5;
+    padding-right: 30px;
+}
+
+.index_class ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #050505;
+}
+
+.index_class ul li:last-child a{
+    margin-left: 258px;
+    margin-right: 26px;
+    font-size: 15px;
+    color: #00a4ff;
+}
+
+.index_class ul li a:hover{
+    color: skyblue;
+}
+
+.recommend_box{
+    float: left;
+    width: 1204px;
+    height: 595px;
+    margin-left: 360px;
+    margin-top: 37px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.recommend_box ul{
+    list-style: none;
+}
+
+.recommend_box ul li{
+    float: left;
+    display: flex;
+    margin-top: 12px;
+    margin-left: 0px;
+    margin-right: 15px;
+    width: 228px;
+    height: 270px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 5px 0px 
+            rgba(118, 118, 118, 0.5);
+}
+
+.recommend_box ul li:nth-child(5n){
+    margin-right: 0px;
+}
+
+.recommend_box p:nth-child(1){
+    font-size: 20px;
+    color: #494949;
+}
+
+.recommend_box a:nth-child(1){
+    float: left;
+    margin-left: 1121px;
+    margin-top: -22px;
+    font-size: 14px;
+    color: #a5a5a5;
+    text-decoration: none;
+}
+
+.recommend_box li:nth-child(-n+5):nth-child(n+2) a{
+    margin-left: 1125px;
+}
+
+.recommend_box li:nth-child(-n+10):nth-child(n+7) a{
+    margin-left: 1125px;
+}
+
+
+.recommend_box ul li a img:nth-child(1)
+{
+    float: left;
+    margin-left: -1125px;
+    margin-top: 20px;
+}
+
+
+.recommend_box ul li a img:nth-child(2)
+{   
+    float: left;
+    margin-left: -930px;
+    margin-top: 26px;
+}
+
+.recommend_box ul li:nth-child(2) a img:nth-child(2)
+{   
+    margin-left: -934px;
+}
+
+.recommend_box ul li:nth-child(7) a img:nth-child(2)
+{   
+    margin-left: -934px;
+}
+
+.recommend_box ul li a .title{
+    float: left;
+    margin-left: -1100px;
+    margin-top: 195px;
+    width: 184px;
+	height: 32px;
+	font-size: 14px;
+	line-height: 20px;
+	color: #050505;
+}
+
+.recommend_box ul li a .title:hover{
+    color: skyblue;
+}
+
+.recommend_box ul li a .leve_class{
+    float: left;
+    font-size: 12px;
+    color: #ff7c2d;
+    margin-left: -1100px;
+    margin-top: 250px;
+}
+
+.recommend_box ul li a .person_num{
+    font-size: 12px;
+    color: #999999;
+    margin-left: -1070px;
+    margin-top: 250px;
+}
+
+
+.end_box{
+float: left;
+width: 1919px;
+height: 417px;
+/* background-color:pink; */
+background-color: #ffffff;
+margin-top: 40px;
+}
+
+
+.end_box img{
+    padding-left: 381px;
+    padding-top: 30px;
+}
+
+.end_box p{
+    padding-left: 381px;
+    padding-top: 25px;
+    width: 426px;
+    height: 30px;
+    font-size: 12px;
+    color: #666666;
+    
+}
+
+.end_box button{
+    margin-left: 381px;
+    margin-top: 17px;
+    width: 120px;
+	height: 36px;
+	border: solid 1px #00a4ff;
+    background-color: #ffffff;
+    font-size: 16px;
+    color: #00a4ff;
+}
+
+.end_box button:hover{
+    color: black;
+    background-color: skyblue;
+}
+
+.end_box .detail{
+    float: right;
+    height: 132px;
+   
+    margin-top: -105px;
+    margin-right: 381px;
+}
+
+.detail dl{
+    float: left;
+    margin-right: 141px;
+}
+
+.detail dl:nth-child(3){
+    margin-right: 0;
+}
+
+.end_box dl dt{
+    font-size: 16px;
+    color: #333333;
+    line-height: 30px;
+}
+
+.end_box dl dd a{
+    text-decoration: none;
+    font-size: 12px;
+    color: #333333;
+    line-height: 21px;
+}
+
+.end_box dl dd a:hover{
+    color: skyblue;
+}

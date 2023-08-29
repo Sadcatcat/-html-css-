@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        height: 67px;
+        background-color: white;
+        border-top: 4px solid #d36b05;
+        border-bottom: 16px solid #f2f2f2;
+    }
+
+    .box a{
+        height: 67px;
+        /* 宽度写死会导致文字变多时，div会换行 */
+        /* width: 134px; */
+        padding: 0 16px;
+        text-decoration: none;
+        display: inline-block;
+        text-align: center;
+        line-height: 67px;
+        color: black;
+    }
+    .box a:hover{
+        background-color: #f2f2f2;
+        color: #d36b05;
+    }
+
+</style>
+<body>
+    <div class="box">
+        <a href="#">新浪</a>
+        <a href="#">新浪导航新浪新浪</a>
+        <a href="#">新</a>
+        <a href="#">新浪导航新浪新浪新浪</a>
+    </div>
+</body>
+</html>
